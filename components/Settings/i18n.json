@@ -1,0 +1,42 @@
+{
+  "fr": {
+    "login": "E-mail",
+    "login-required": "L'e-mail est requis",
+    "password": "Mot de passe",
+    "password-required": "Le mot de passe est requis",
+    "error.bad-username-password": "Mauvais nom d'utilisateur ou mot de passe",
+    "invalid": "Le formulaire est invalide",
+    "settings": "Paramétrages",
+    "webpush": "Notification Push",
+    "first-notif-title": "WebPush activé",
+    "first-notif": "Vos notifications ont été activées avec succès.",
+    "WebAuthn": "Empreinte digitale",
+    "lastcompiled": "Dernière compilation",
+    "lang": "Langue",
+    "general": "Général",
+    "save-message": "Paramètres enregistrés",
+    "reinit_config": "Réinitialiser la configuration des pages",
+    "confirm_reinit_config": "Êtes-vous sûr de vouloir réinitialiser votre configuration des pages ?",
+    "revision": "Révision"
+  },
+  "en": {
+    "login": "E-mail",
+    "login-required": "E-mail required",
+    "password": "Password",
+    "password-required": "Password required",
+    "error.bad-username-password": "Bad username or password",
+    "invalid": "Form is invalid",
+    "settings": "Settings",
+    "webpush": "Notification Push",
+    "first-notif-title": "WebPush activated",
+    "first-notif": "Yours notifications has been activated.",
+    "WebAuthn": "Fingerprint",
+    "lastcompiled": "Last compiled",
+    "lang": "Language",
+    "general": "General",
+    "save-message": "Settings saved",
+    "reinit_config": "Reinitialize page configuration",
+    "confirm_reinit_config": "Are you sure you want to reset your page configuration?",
+    "revision": "Revision"
+  }
+}

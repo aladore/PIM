@@ -1,0 +1,18 @@
+.v-data-table__wrapper{
+
+  .v-data-table-header th{
+    color: $color0!important;
+    font-size: 16px;
+    font-family: $body-font-family;
+    font-weight: 700;
+  }
+  td {
+    height: 60px;
+
+    &.text-start{
+      font-family: $body-font-family;
+      font-weight: 200;
+      font-size: 15px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.text-wrap-word {
+  overflow-wrap: break-word;
+}
+
+label {
+  font-weight: bold;
+}
+
+
+.formbuilder {
+  label {
+    font-weight: inherit;
+  }
+}
+
+.subtitle{
+  color: $color0;
+  //padding: 5px;
+  font: Bold 14px/18px Montserrat, sans-serif;
+  overflow-wrap: break-word;
+  &_thin{
+    font-weight:400;
+  }
+}

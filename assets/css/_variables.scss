@@ -1,0 +1,87 @@
+@import '~vuetify/src/styles/settings/_colors.scss';
+
+// Colors initial
+// dont forget to change in calendar
+$color0: #011C40;
+$color1: #A2D4F2;
+$color2: #055395;
+$color3: #0096a5;
+$color4: #8e6d64;
+$color5: #5e4339;
+$color6: #74919b;
+$color7: #f75329;
+$color8: #679e44;
+
+:root {
+   --v-primary-base: #011C40;
+   --v-primary-base-p90: #39454eE6;
+   --v-primary-base-p40: #39454e66;
+   --v-primary-base-p30: #39454eD;
+   --v-secondary-base: #ffffff;
+   --v-secondary-base-p70: #ffffff4D;
+   --v-secondary-base-p40: #ffffff66;
+   --v-primary-background: #ffffff;
+
+   --v-color1: $color1;
+}
+
+$theme-colors: (
+  "primary": var(--v-primary-base),
+  "secondary": var(--v-secondary-base),
+);
+
+
+
+
+
+// Borders
+$border-width: 1px;
+$border-color: map-get($grey, 'lighten-2');
+
+.v-application {
+   .color0 {
+      background-color: $color0 !important;
+      border-color: $color0 !important;
+   }
+
+   .color1 {
+      background-color: $color1 !important;
+      border-color: $color1 !important;
+   }
+
+   .color2 {
+      background-color: $color2 !important;
+      border-color: $color2 !important;
+   }
+
+   .color3 {
+      background-color: $color3 !important;
+      border-color: $color3 !important;
+   }
+
+   .color4 {
+      background-color: $color4 !important;
+      border-color: $color4 !important;
+   }
+
+   .color5 {
+      background-color: $color5 !important;
+      border-color: $color5 !important;
+   }
+
+   .color6 {
+      background-color: $color6 !important;
+      border-color: $color6 !important;
+   }
+
+   .color7 {
+      background-color: $color7 !important;
+      border-color: $color7 !important;
+   }
+
+   .color8 {
+      background-color: $color8 !important;
+      border-color: $color8 !important;
+   }
+}
+

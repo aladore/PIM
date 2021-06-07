@@ -1,0 +1,50 @@
+.spinner:after{
+  background: $color0!important;
+}
+
+.plane {
+  background: $color1!important;
+}
+#middle .plane{
+  background: $color2!important;
+}
+
+.su-btn-light {
+  text-align: left;
+  font: Medium 12px/34px Montserrat;
+  letter-spacing: 0px;
+  color: #011C40;
+  border-radius: 7px;
+  opacity: 1;
+};
+
+.su-btn-dark {
+  text-align: left;
+  font: Medium 12px/34px Montserrat;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  border-radius: 7px;
+  opacity: 1;
+};
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 50px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 50px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $color1;
+  border-radius: 50px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $color0;
+}
+
+a {
+  text-decoration: none;
+}

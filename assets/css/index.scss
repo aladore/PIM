@@ -1,0 +1,19 @@
+$color-pack: false;
+@import '~vuetify/dist/vuetify.min.css';
+@import "_variables.scss";
+@import "_utils.scss";
+@import "_border.scss";
+@import "_app.scss";
+@import "_text.scss";
+@import "./_default";
+@import "./_button";
+@import "./_icon";
+@import "./_form";
+@import "./_font";
+@import "./_animation";
+@import "./_table";
+@import "./_navbar";
+@import "./_layout";
+@import "./jdd.css";
+
+

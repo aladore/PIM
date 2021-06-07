@@ -1,0 +1,125 @@
+@import '~vuetify/src/styles/settings/_variables.scss';
+
+.transparent-75 {
+  background-color: rgba(255,255,255,0.75) !important;
+}
+.transparent-80 {
+  background-color: rgba(255,255,255,0.80) !important;
+}
+.transparent-bg {
+  background-color: transparent !important;
+}
+
+.v-toolbar {
+  &.pa-0 {
+    .v-toolbar__content, .v-toolbar__extension {
+      padding: 0 !important;
+    }
+  }
+  &.px-0 {
+    .v-toolbar__content, .v-toolbar__extension {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
+  &.pr-0 {
+    .v-toolbar__content, .v-toolbar__extension {
+      padding-right: 0 !important;
+    }
+  }
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+$su-spacer:16px;
+$su-spacer-x: $su-spacer;
+$su-spacer-y: $su-spacer;
+$su-spacers: (
+  "zero": (
+    "x": 0,
+    "y": 0
+  ),
+  "one": (
+    "x": ($su-spacer-x * .25),
+    "y": ($su-spacer-y * .25)
+  ),
+  "two": (
+    "x": ($su-spacer-x * .5),
+    "y": ($su-spacer-y * .5)
+  ),
+  "three": (
+    "x": $su-spacer-x,
+    "y": $su-spacer-y
+  ),
+  "four": (
+    "x": ($su-spacer-x * 1.5),
+    "y": ($su-spacer-y * 1.5)
+  ),
+  "five": (
+    "x": ($su-spacer-x * 3),
+    "y": ($su-spacer-y * 3)
+  )
+);
+
+// padding & margin with breakpoint
+@each $size, $media_query in $display-breakpoints {
+  @media #{$media_query} {
+      $i: 0;
+      @each $level, $spacer in $su-spacers {
+        .mt-#{$i}-#{$size} {
+          margin-top: map_get($spacer, 'y') !important;
+        }
+        .mr-#{$i}-#{$size} {
+          margin-right: map_get($spacer, 'x') !important;
+        }
+        .mb-#{$i}-#{$size} {
+          margin-bottom:map_get($spacer, 'y') !important;
+        }
+        .ml-#{$i}-#{$size} {
+          margin-left:map_get($spacer, 'x') !important;
+        }
+        .mx-#{$i}-#{$size} {
+          margin-left:map_get($spacer, 'x') !important;
+          margin-right:map_get($spacer, 'x') !important;
+        }
+        .my-#{$i}-#{$size} {
+          margin-top:map_get($spacer, 'y') !important;
+          margin-bottom:map_get($spacer, 'y') !important;
+        }
+        .ma-#{$i}-#{$size} {
+          margin:map_get($spacer, 'y') map_get($spacer, 'x') !important;
+        }
+        .pt-#{$i}-#{$size} {
+          padding-top:map_get($spacer, 'y') !important;
+        }
+        .pr-#{$i}-#{$size} {
+          padding-right:map_get($spacer, 'x') !important;
+        }
+        .pb-#{$i}-#{$size} {
+          padding-bottom:map_get($spacer, 'y') !important;
+        }
+        .pl-#{$i}-#{$size} {
+          padding-left:map_get($spacer, 'x') !important;
+        }
+        .px-#{$i}-#{$size} {
+          padding-left:map_get($spacer, 'x') !important;
+          padding-right:map_get($spacer, 'x') !important;
+        }
+        .py-#{$i}-#{$size} {
+          padding-top:map_get($spacer, 'y') !important;
+          padding-bottom:map_get($spacer, 'y') !important;
+        }
+        .pa-#{$i}-#{$size} {
+          padding:map_get($spacer, 'y') map_get($spacer, 'x') !important;
+        }
+
+        $i: $i + 1;
+      }
+  }
+}

@@ -1,0 +1,157 @@
+// Pull down refresh
+// https://developers.google.com/web/updates/2017/11/overscroll-behavior
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500&display=swap');
+$body-font-family: 'Montserrat';
+$title-font: 'Montserrat';
+
+v-application {
+  font-family: $body-font-family, sans-serif !important;
+}
+
+html {
+  @media #{map-get($display-breakpoints, 'sm-and-down')} {
+    font-size: 12px;
+    .v-list-item__title{
+      line-height: 2 !important;
+    }
+
+    button, input, optgroup, select, textarea, .v-select__selections {
+      font-size: 12px;
+    }
+
+    .v-label {
+      font-size: 12px;
+    }
+  }
+}
+
+html, body {
+  overscroll-behavior-y: contain;
+  background-color: #eee;
+  height: 100%;
+}
+
+.fa, .fas, .fab, .far {
+  min-width: 1em;
+}
+
+#app {
+  background-color: var(--v-background-base);
+}
+
+.side-navigation {
+  //.navigation-link-active {
+  //  @extend .transparent-75;
+  //
+  //  &:hover {
+  //    @extend .transparent-80;
+  //  }
+  //}
+}
+
+// Pagination
+.v-pagination {
+  .v-pagination__navigation {
+    .v-icon {
+      font-size: 20px !important;
+    }
+  }
+}
+
+// IMPORTANT To avoid indesirable effect on vue grid
+.vue-grid-item.no-touch {
+  -ms-touch-action: inherit !important;
+  touch-action: inherit !important;
+}
+
+
+a.theme--dark.primary--text {
+  color: #ffffff !important;
+}
+
+
+i.theme--dark.primary--text.v-icon {
+  color: #ffffff !important;
+}
+
+.v-dialog {
+  border-radius: 0px;
+}
+.v-sheet {
+  border-radius: 0px;
+  .v-card__title {
+    padding: 0px;
+  }
+}
+
+.v-avatar {
+
+  margin: 0px 10px 0px 0px;
+
+  span {
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 50%;
+    height: 28px;
+    width: 30px;
+    color: #fff;
+    margin-left: -12px;
+
+    &.color0 {
+      background-color: $color0;
+    }
+
+    &.color1 {
+      background-color: $color1;
+    }
+
+    &.color2 {
+      background-color: $color2;
+    }
+
+    &.color3 {
+      background-color: $color3;
+    }
+
+    &.color4 {
+      background-color: $color4;
+    }
+
+    &.color5 {
+      background-color: $color5;
+    }
+
+    &.color6 {
+      background-color: $color6;
+    }
+
+    &.color7 {
+      background-color: $color7;
+    }
+
+    &.color8 {
+      background-color: $color8;
+    }
+  }
+}
+
+
+.theme--light .v-main {
+  background-color: #eee;
+}
+
+
+.theme--dark {
+  .v-main {
+    background-color: #222;
+  }
+}
+
+.theme--dark.v-application {
+  background-color: #222 !important;
+}
+
+.theme--light.v-data-table tbody tr:hover:not(.v-data-table__expanded__content) {
+  background: #eee;
+}

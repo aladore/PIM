@@ -1,0 +1,39 @@
+.v-icon.icon {
+  cursor: pointer;
+  &:hover{
+    opacity: 0.8!important;
+  }
+  &_default{
+    color: $color0;
+    padding: 5px;
+  }
+  &_lg{
+    font-size: 34px;
+    padding: 5px;
+  }
+  &_light{
+    color: #fff!important;
+  }
+  &_handle, &_handle-subservice{
+    cursor: move;
+  }
+
+  &_rounded {
+    border-radius: 50%;
+    height: 34px;
+    color: #fff;
+    width: 34px;
+    padding: 3px;
+    font-size: 21px;
+    background-color: $color0;
+  }
+}
+
+.su-title-icon {
+  width: 39px;
+  height: 39px;
+  margin-right: 10px;
+  border-radius: 20%;
+  background-color: #5faad9;
+}
+

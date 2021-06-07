@@ -1,0 +1,61 @@
+.card {
+  display: flex;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0px 3px 6px rgba(179, 179, 179, 0.2);
+  padding: 5px;
+}
+.l-w100{
+  width: 100%;
+}
+.l-relative {
+  position: relative;
+}
+.l-separate_top{
+  border-top: 1px solid;
+  border-top-color: rgba(0,0,0,.2) ;
+}
+.l-separated{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  &:after {
+    content:"";
+    height: 1px;
+    position: absolute;
+    bottom:0;
+    left: 0;
+    right: 0;
+    background-color: $color0;
+    opacity: 0.3;
+  }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-none {
+  display: none;
+}
+
+.shadow-1 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.shadow-2 {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.shadow-3 {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.shadow-4 {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.shadow-5 {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
